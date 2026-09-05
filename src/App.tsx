@@ -79,11 +79,11 @@ export default function App() {
       {/* ---------- header ---------- */}
       <header className="sticky top-0 z-30 border-b-2 border-ink-900 bg-paper-50/92 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center gap-4 px-5 py-3.5 md:px-10">
-          <button onClick={() => goTo("home")} className="group flex items-center gap-2.5" aria-label="Sarthi home">
+          <button onClick={() => goTo("home")} className="group flex items-center gap-2.5" aria-label="Study Haven home">
             <span className="text-flame-500 transition-transform duration-700 group-hover:rotate-90"><Wheel size={30} /></span>
             <span className="hidden leading-none sm:block">
-              <span className="block font-display text-lg font-extrabold tracking-wide text-ink-900">SARTHI</span>
-              <span className="block text-[9px] font-bold uppercase tracking-[0.3em] text-ink-600">स्टडी स्टूडियो</span>
+              <span className="block font-display text-lg font-extrabold tracking-[0.08em] text-ink-900">STUDY HAVEN</span>
+              <span className="block text-[9px] font-bold uppercase tracking-[0.3em] text-ink-600">सीबीएसई · क्लास 9–12</span>
             </span>
           </button>
 
@@ -158,8 +158,8 @@ export default function App() {
               <div className="flex items-center gap-3">
                 <span className="text-marigold-400"><Wheel size={34} /></span>
                 <div>
-                  <p className="font-display text-2xl font-extrabold tracking-wide">SARTHI</p>
-                  <p className="text-[10px] uppercase tracking-[0.3em] text-paper-50/45">सारथी · your study charioteer</p>
+                  <p className="font-display text-2xl font-extrabold tracking-wide">STUDY HAVEN</p>
+                  <p className="text-[10px] uppercase tracking-[0.3em] text-paper-50/45">स्टडी हेवन · your CBSE study haven</p>
                 </div>
               </div>
               <p className="mt-4 max-w-sm text-sm leading-relaxed text-paper-50/60">
@@ -201,7 +201,7 @@ export default function App() {
             </div>
           </div>
           <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-paper-50/10 pt-6 text-xs text-paper-50/40">
-            <span>© {new Date().getFullYear()} Sarthi Study Studio · Not affiliated with CBSE/NCERT — a student-made study companion.</span>
+            <span>© {new Date().getFullYear()} Study Haven Studio · Not affiliated with CBSE/NCERT — a student-made study companion.</span>
             <span className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-teal-400" />
               Profile saved on this device

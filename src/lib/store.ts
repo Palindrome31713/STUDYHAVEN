@@ -2,9 +2,23 @@ import type { Profile, SubjectId } from "../data/curriculum";
 
 export type Tab = "home" | "library" | "videos" | "quiz";
 
-const PROFILE_KEY = "sarthi.profile.v1";
-const STATS_KEY = "sarthi.stats.v1";
-const MISSION_KEY = "sarthi.mission.v1";
+const PROFILE_KEY = "studyhaven.profile.v1";
+const STATS_KEY = "studyhaven.stats.v1";
+const MISSION_KEY = "studyhaven.mission.v1";
+
+// read-through fallback for older saved data so registered students never re-onboard
+const LEGACY_KEYS: Record<string, string> = {
+  [PROFILE_KEY]: "sarthi.profile.v1",
+  [STATS_KEY]: "sarthi.stats.v1",
+  [MISSION_KEY]: "sarthi.mission.v1",
+};
+function readStore(key: string): string | null {
+  const fresh = localStorage.getItem(key);
+  if (fresh) return fresh;
+  const old = localStorage.getItem(LEGACY_KEYS[key] ?? "");
+  if (old) localStorage.setItem(key, old); // migrate once
+  return old;
+}
 
 export interface Stats {
   visits: number;
@@ -37,7 +51,7 @@ function yesterdayStr() {
 
 export function loadProfile(): Profile | null {
   try {
-    const raw = localStorage.getItem(PROFILE_KEY);
+    const raw = readStore(PROFILE_KEY);
     if (!raw) return null;
     const p = JSON.parse(raw) as Profile;
     if (!p.name || !p.grade || !Array.isArray(p.subjects) || p.subjects.length === 0) return null;
@@ -57,7 +71,7 @@ export function clearProfile() {
 
 export function loadStats(): Stats {
   try {
-    const raw = localStorage.getItem(STATS_KEY);
+    const raw = readStore(STATS_KEY);
     return raw ? { ...DEFAULT_STATS, ...JSON.parse(raw) } : { ...DEFAULT_STATS };
   } catch {
     return { ...DEFAULT_STATS };
@@ -94,7 +108,7 @@ export function recordQuiz(subject: SubjectId, chapter: string, score: number, t
 /* daily mission checklist */
 export function loadMission(): boolean[] {
   try {
-    const raw = localStorage.getItem(MISSION_KEY);
+    const raw = readStore(MISSION_KEY);
     if (!raw) return [false, false, false];
     const { day, done } = JSON.parse(raw) as { day: string; done: boolean[] };
     return day === todayStr() ? done : [false, false, false];

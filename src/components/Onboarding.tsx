@@ -66,7 +66,7 @@ export default function Onboarding({ onDone }: { onDone: (p: Profile) => void })
         <div className="flex items-center gap-3">
           <span className="anim-spin-slow text-marigold-400"><Wheel size={34} /></span>
           <div className="leading-tight">
-            <div className="font-display text-xl font-bold tracking-wide">SARTHI</div>
+            <div className="font-display text-xl font-bold tracking-wide">STUDY HAVEN</div>
             <div className="text-[11px] uppercase tracking-[0.28em] text-paper-50/50">सीबीएसई स्टडी स्टूडियो</div>
           </div>
         </div>
@@ -79,11 +79,11 @@ export default function Onboarding({ onDone }: { onDone: (p: Profile) => void })
             </p>
             <h1 className="font-display text-5xl font-extrabold leading-[1.02] tracking-tight md:text-7xl">
               <Scramble text="Your study" /><br />
-              <Scramble text="charioteer," delay={350} />
+              <Scramble text="haven," delay={350} />
               <span className="text-marigold-400"><Scramble text=" ready." delay={700} /></span>
             </h1>
             <p className="mt-5 max-w-md text-[15px] leading-relaxed text-paper-50/70">
-              Tell Sarthi once — your name, your class, your subjects — and it builds your personal
+              Tell Study Haven once — your name, your class, your subjects — and it builds your personal
               shelf: <span className="text-paper-50">NCERT textbooks, curated video lessons, chapter quizzes that regenerate every time, and an AI doubt-buddy.</span>
             </p>
             <ul className="mt-7 space-y-3 text-sm text-paper-50/80">
@@ -194,7 +194,7 @@ export default function Onboarding({ onDone }: { onDone: (p: Profile) => void })
                   <div>
                     <h2 className="font-display text-2xl font-bold">Your subjects.</h2>
                     <p className="mt-1 text-sm text-paper-50/55">
-                      Sarthi unlocks books, videos & quizzes for these. Keep at least 3.
+                      Study Haven unlocks books, videos & quizzes for these. Keep at least 3.
                       <span className="ml-1 font-semibold text-marigold-300">{picked.length} selected</span>
                     </p>
                     <div className="mt-5 grid grid-cols-2 gap-2.5">
@@ -250,7 +250,7 @@ export default function Onboarding({ onDone }: { onDone: (p: Profile) => void })
                       </div>
                     </div>
                     <p className="mt-4 text-xs leading-relaxed text-paper-50/45">
-                      Saved on this device — Sarthi will remember you next time and take you straight to your desk.
+                      Saved on this device — Study Haven will remember you next time and take you straight to your desk.
                     </p>
                   </div>
                 )}
@@ -276,7 +276,7 @@ export default function Onboarding({ onDone }: { onDone: (p: Profile) => void })
         </div>
 
         <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.24em] text-paper-50/30">
-          <span>सारथी · Class 9–12</span>
+          <span>स्टडी हेवन · Class 9–12</span>
           <span>NCERT · CBSE pattern</span>
         </div>
       </div>

@@ -17,7 +17,7 @@ export const QUOTES: Quote[] = [
   { text: "The best way to predict the future is to invent it.", author: "Alan Kay" },
   { text: "Whether you think you can, or you think you can't — you're right.", author: "Henry Ford" },
   { text: "Small steps in the right direction can turn out to be the biggest step of your life.", author: "Naeem Callaway" },
-  { text: "Sapno ko sach karne ka hunar, neend mein nahi mehnat mein hota hai.", author: "Sarthi proverb" },
+  { text: "Sapno ko sach karne ka hunar, neend mein nahi mehnat mein hota hai.", author: "Study Haven proverb" },
   { text: "Strive not to be a success, but rather to be of value.", author: "Albert Einstein" },
   { text: "Your present circumstances don't determine where you go; they merely determine where you start.", author: "Nido Qubein" },
   { text: "Push yourself, because no one else is going to do it for you.", author: "Unknown" },
@@ -32,7 +32,7 @@ export const QUOTES: Quote[] = [
   { text: "The mind is not a vessel to be filled, but a fire to be kindled.", author: "Plutarch" },
   { text: "Success usually comes to those who are too busy to be looking for it.", author: "Henry David Thoreau" },
   { text: "You don't have to be great to start, but you have to start to be great.", author: "Zig Ziglar" },
-  { text: "Padhai wahi jo zindagi badal de; baaki toh sirf time-pass hai.", author: "Sarthi proverb" },
+  { text: "Padhai wahi jo zindagi badal de; baaki toh sirf time-pass hai.", author: "Study Haven proverb" },
 ];
 
 export function randomQuote(exclude?: number): { quote: Quote; index: number } {

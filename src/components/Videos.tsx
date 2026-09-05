@@ -53,7 +53,7 @@ export default function Videos({ profile }: { profile: Profile }) {
         <div className="flex flex-col gap-3 rounded-2xl border-2 border-ink-900 bg-cobalt-500 p-5 text-white sm:flex-row sm:items-center">
           <div className="flex-1">
             <h3 className="font-display text-lg font-extrabold">Can't find your chapter? Search the whole of YouTube.</h3>
-            <p className="text-sm text-white/75">Type any topic — Sarthi builds a focused CBSE search for Class {profile.grade}.</p>
+            <p className="text-sm text-white/75">Type any topic — Study Haven builds a focused CBSE search for Class {profile.grade}.</p>
           </div>
           <form
             className="flex gap-2"

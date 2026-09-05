@@ -65,7 +65,7 @@ export default function Home({ profile, stats, goTo, startQuiz }: {
             <p className="mt-6 max-w-lg text-[15px] leading-relaxed text-ink-600">
               Class <b className="text-ink-900">{profile.grade}</b>
               {profile.stream ? ` · ${STREAMS.find((s) => s.id === profile.stream)?.name ?? ""}` : ""} · {subjects.length} subjects · {totalChapters} chapters on your shelf.
-              The syllabus hasn't shrunk — but your charioteer has arrived.
+              The syllabus hasn't shrunk — but your study haven has arrived.
             </p>
           </Reveal>
         </div>

@@ -197,23 +197,23 @@ const TIPS = [
 
 const GREET = [
   "Namaste, {name}! Ready for some serious (but friendly) studying? Ask me a concept, throw a sum at me, or just say 'motivate me'.",
-  "Hey {name}! Sarthi at your service. Type a topic like 'photosynthesis' or 'trigonometry' and I'll unpack it.",
+  "Hey {name}! Haven at your service. Type a topic like 'photosynthesis' or 'trigonometry' and I'll unpack it.",
   "Welcome back, {name}! Shall we crack a chapter today? Ask away.",
 ];
 
 const GUARD = [
-  "I'm your study charioteer — I only drive toward education. Try me with a concept ('explain Ohm's law'), a sum ('what is 47×13'), or 'motivate me'.",
+  "I live inside Study Haven — and I only drive toward education. Try me with a concept ('explain Ohm's law'), a sum ('what is 47×13'), or 'motivate me'.",
   "That one's outside my classroom. But here's a better question: which chapter is scaring you this week? Let's tame it together.",
-  "Sarthi speaks fluent syllabus only — and I'm fluent in it! Ask me anything from your {grade}th grade books.",
+  "Haven speaks fluent syllabus only — and I'm fluent in it! Ask me anything from your {grade}th grade books.",
 ];
 
 const THANKS = [
   "Anytime, {name}! Ab padhai pe lag ja — you've got this.",
-  "That's what charioteers are for. Now go earn those marks — one question at a time.",
+  "That's what a study haven is for. Now go earn those marks — one question at a time.",
 ];
 
 const WHO = [
-  "I'm Sarthi — सारथी, the charioteer. I live in your browser, I know your CBSE shelf inside out, and my only job is to make you understand (and smile while doing it). Ask me any concept, a calculation, or for a push of motivation.",
+  "I'm Haven — Study Haven's resident brain. I live in your browser, I know your CBSE shelf inside out, and my only job is to make you understand (and smile while doing it). Ask me any concept, a calculation, or for a push of motivation.",
 ];
 
 export function botReply(raw: string, ctx: BotCtx): string {

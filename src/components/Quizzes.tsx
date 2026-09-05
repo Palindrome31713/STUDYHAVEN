@@ -96,7 +96,7 @@ export default function Quizzes({ profile, seed, onStatsChanged }: {
           <p className="text-[11px] font-bold uppercase tracking-[0.3em] text-flame-500">The quiz arena</p>
           <h2 className="mt-1 font-display text-4xl font-extrabold text-ink-900 md:text-5xl">Fresh questions. Every single time.</h2>
           <p className="mt-2 max-w-xl text-[15px] text-ink-600">
-            Sarthi's quiz engine re-mixes concept banks and generates fresh numericals on the spot — no two attempts look the same.
+            Study Haven's quiz engine re-mixes concept banks and generates fresh numericals on the spot — no two attempts look the same.
           </p>
         </div>
       </Reveal>
@@ -145,7 +145,7 @@ export default function Quizzes({ profile, seed, onStatsChanged }: {
               </span>
               <div>
                 <h3 className="font-display text-2xl font-extrabold text-ink-900">{SUBJECTS[subject].name} · Class {profile.grade}</h3>
-                <p className="text-sm text-ink-600">Choose a chapter — Sarthi will forge 6 questions for it.</p>
+                <p className="text-sm text-ink-600">Choose a chapter — the forge will shape 6 questions for it.</p>
               </div>
             </div>
             <div className="grid gap-2.5 sm:grid-cols-2 xl:grid-cols-3">

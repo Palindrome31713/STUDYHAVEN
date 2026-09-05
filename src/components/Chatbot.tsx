@@ -18,7 +18,7 @@ export default function Chatbot({ profile }: { profile: Profile }) {
     if (open && msgs.length === 0) {
       setTyping(true);
       const t = setTimeout(() => {
-        setMsgs([{ role: "bot", text: `Namaste, ${profile.name}! I'm Sarthi — your AI study buddy for Class ${profile.grade}. Concepts, sums, plans or a push of motivation — sirf padhai, bhai. What's on your mind?` }]);
+        setMsgs([{ role: "bot", text: `Namaste, ${profile.name}! I'm Haven — Study Haven's AI buddy for Class ${profile.grade}. Concepts, sums, plans or a push of motivation — sirf padhai, bhai. What's on your mind?` }]);
         setTyping(false);
       }, reduced ? 100 : 800);
       return () => clearTimeout(t);
@@ -49,7 +49,7 @@ export default function Chatbot({ profile }: { profile: Profile }) {
       {/* floating launcher */}
       <button
         onClick={() => setOpen((o) => !o)}
-        aria-label={open ? "Close Sarthi AI" : "Open Sarthi AI"}
+        aria-label={open ? "Close Haven AI" : "Open Haven AI"}
         className="group fixed bottom-5 right-5 z-40 flex items-center gap-2.5 rounded-full border-2 border-ink-950 bg-flame-500 py-3 pl-4 pr-5 font-display text-sm font-extrabold text-white shadow-lift transition-all duration-300 hover:-translate-y-1 hover:bg-flame-400"
       >
         <span className="relative">
@@ -60,7 +60,7 @@ export default function Chatbot({ profile }: { profile: Profile }) {
             </span>
           )}
         </span>
-        {open ? "Close" : "Sarthi AI"}
+        {open ? "Close" : "Haven AI"}
       </button>
 
       <AnimatePresence>
@@ -76,7 +76,7 @@ export default function Chatbot({ profile }: { profile: Profile }) {
             <div className="flex items-center gap-3 border-b border-paper-50/10 bg-ink-950/60 px-4 py-3">
               <span className="grid h-9 w-9 place-items-center rounded-full bg-marigold-500 text-ink-950"><Wheel size={20} /></span>
               <div className="flex-1">
-                <p className="font-display text-sm font-extrabold">Sarthi AI</p>
+                <p className="font-display text-sm font-extrabold">Haven AI</p>
                 <p className="flex items-center gap-1.5 text-[11px] text-paper-50/55">
                   <span className="h-1.5 w-1.5 rounded-full bg-teal-400" /> online · study mode only
                 </p>

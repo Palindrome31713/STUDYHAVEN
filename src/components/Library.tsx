@@ -118,7 +118,7 @@ export default function Library({ profile, startQuiz }: { profile: Profile; star
       </div>
 
       <p className="text-xs text-ink-600">
-        * Chapter PDFs are served by the official NCERT portal ({NCERT_LIBRARY_URL.split("//")[1]}) — Sarthi only shows you the way.
+        * Chapter PDFs are served by the official NCERT portal ({NCERT_LIBRARY_URL.split("//")[1]}) — Study Haven only shows you the way.
       </p>
 
       {/* ------- chapter drawer ------- */}
