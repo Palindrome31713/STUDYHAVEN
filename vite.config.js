@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/REPLACE-WITH-YOUR-REPO-NAME/',
+  base: '/Study-Haven-Main/',
   server: {
     host: "0.0.0.0",
     port: 3000,
